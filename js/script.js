@@ -1,3 +1,54 @@
+
+// click to go section
+$(".nav-item").click(function(){
+    let ref=$(this).attr("href")
+    let test= $(ref).offset().top
+    $("body,html").animate({scrollTop:`${test}`},1000)
+  })
+  
+  
+  // scroll change nav
+  let myOffset=$("#about").offset().top;
+  console.log(myOffset)
+  $(window).scroll(function(){
+      let wScroll =$(window).scrollTop()
+      if(wScroll>=myOffset){
+  
+          $("nav").css("backgroundColor","white")
+          $("nav").css("color","white")
+      }
+  }
+  
+  
+  )
+
+
+//about
+  var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+  $(".fade").addClass('animate__animated  animate__rotateInDownLeft  animate__rotateInDownRight animate__delay-1s',1000,function(){
+
+      $(".fade").each(function() {
+          /* Check the location of each desired element */
+          var objectBottom = $(this).offset().top + $(this).outerHeight();
+          
+          /* If the element is completely within bounds of the window, fade it in */
+          if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+            if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+          } else { //object goes out of view (scrolling up)
+            if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+          }
+        });
+  })
+
+
+
+
+
+
+
+
+
+
 // testimonial starting 
 $(document).ready(function () {
 
@@ -33,6 +84,7 @@ $(document).ready(function () {
 
 
 // donor script display with effects
+
 // let donorOffset = $("#donors").offset().top;
 // $(window).scroll(function(){
 //     let wScroll = $(window).scrollTop();
@@ -52,3 +104,23 @@ $(document).ready(function () {
         })
 //     }
 // })
+
+//counter
+let counterElem = document.getElementsByClassName("counter");
+let count = [0,0,0,0];
+let maxCount = [2000,3000,3500,1320];
+var interv =[];
+for(let i =0; i< counterElem.length;i++){
+    interv[i] = setInterval(function() {
+        incrementCount(i)},50);
+}
+
+function incrementCount(index){
+    count[index]++;
+    if(count[index] >= maxCount[index]){
+        clearInterval(interv[index]);
+        
+    }
+    counterElem[index].innerHTML = count[index];
+    
+}

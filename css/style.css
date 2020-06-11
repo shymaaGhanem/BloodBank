@@ -1,3 +1,378 @@
+
+body{
+  text-align: right;
+  direction: rtl;
+}
+.main-bgcolor{
+background-color:rgb(225, 29, 46);
+
+}
+/* navbar */
+.navbar{
+position: fixed;
+top:0;
+left:0;
+right: 0;
+z-index: 9999;
+
+
+
+
+
+}
+
+.nav-item a{
+  color:rgb(68, 67, 67) !important;
+  padding: .4rem;
+  margin: .3rem;
+
+}
+.reg{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10rem !important;
+   
+  
+
+}
+.navbar-brand{
+  padding: .4rem !important;
+  margin: .3rem !important;
+  font-weight: bold !important;
+}
+
+/* end navbar*/
+
+/* start home section */
+#home{
+  height: 100vh;
+}
+.home-header{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; 
+
+}
+
+video{
+width:72%;
+
+
+}
+
+.wave-bottom1{
+ position:absolute ;
+ width: 100%;
+ bottom: 0;
+ z-index: 10;
+
+}
+.wave-bottom2{
+  bottom: 20px;
+  z-index: 9;
+}
+.wave-left1{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 72%;
+}
+.wave-left2{
+  position: absolute;
+  top:0;
+  left:0px;
+  width: 74%;
+}
+.home-header .img1 {
+  position: absolute;
+  opacity: .3;
+  left: 100px;
+  top:100px;
+  width: 70px;
+}
+.img2{
+  position: absolute;
+  opacity: .3;
+  left: 30px;
+  width:50px ;
+bottom: 200px;
+}
+
+
+
+
+/* media query */
+
+@media (max-width: 575px) {
+
+.wave-bottom1,.wave-bottom2{
+  display: none;
+}
+video{
+  width: 100%;
+}
+}
+
+
+@media (max-width: 1000px) { 
+.wave-left1,.wave-left2,.img1,.img2,.wave-bottom1,.wave-bottom2{
+  display: none;
+  
+}
+video{
+  width: 100%;
+
+}
+
+}
+
+@media (max-width: 1400px) {
+video{
+  width: 100%;
+}
+
+}
+
+
+
+/*about section*/
+#about
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.layer
+{
+  
+    position: relative;
+right: 50px;
+    border-radius: 13%;
+    width: 106%;
+    height: 400px;
+    transform: rotate(5deg);
+    background: linear-gradient(90deg, #EA4335 11%, rgba(217,165,166,0.9808298319327731) 35%,  #EA4335 56%);
+    
+}
+
+.cont img
+{
+    position: absolute;
+    top: 0px;
+    right: 60px;
+    border-radius: 13%;
+    transform: rotate(-7deg);
+}
+
+.about-layer h1
+{
+    color: rgb(39, 13, 104);
+
+}
+.line
+{
+    width: 80px;
+    height: 2px;
+    background: #EA4335;
+    background: linear-gradient(90deg, #EA4335 49%, rgba(248, 126, 128, 0.981) 71%);
+}
+.about-layer p
+{
+    font-size: 20px;
+    color: rgb(123, 124, 124);
+
+}
+
+.about-layer ul
+{
+    list-style: none;
+}
+.about-layer ul li::before
+{
+    content: "\25CB";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #EA4335; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 2em; /* Also needed for space (tweak if needed) */
+    margin-left: 1em; /* Also needed for space (tweak if needed) */
+}
+
+.about-layer ul li
+{
+    padding-top: 4px;
+    color: rgb(123, 124, 124);
+    font-size: 18px
+  
+}
+/*end about*/
+
+
+
+/* donor section */
+body{
+  direction: rtl;
+  text-align: right;
+}
+
+#donors{
+  padding: 5rem 0;
+  background-color: #F7F7F7;
+  position: relative;
+  overflow: hidden;
+}
+#donors .item{
+  border-radius: 50px;
+  padding: 1rem;
+  box-shadow: 3px 3px 5px #a9aeb2;
+  background-color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+#donors .item img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: #F79E99 3px solid;
+}
+
+#donors .item .icons{
+  padding: 1rem;
+  border-top: solid 1px #a9aeb2;
+}
+#donors .icons i{
+  padding: 0.5rem 0;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  /* text-align: center;
+  margin: auto; */
+}
+#donors .icons .myfbook{
+  color: #3C5A98;
+  border:solid 1px #3C5A98;
+}
+#donors .icons .mytwitter{
+  color: #1DA1F2;
+  border:solid 1px #1DA1F2;
+}
+#donors .icons .mygoogle{
+  color: #EA4335;
+  border:solid 1px #EA4335;
+}
+#donors .detail{
+  display: none;
+}
+#donors .detail h3::after{
+  content: "";
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 3px;
+  background-color: #EA4335;
+  bottom: 0;
+  right: 1%;
+  animation: movaLine 1s infinite alternate-reverse;
+}
+@keyframes movaLine{
+  0%{
+      width: 0%;
+  }
+  100%{
+      width: 30%;
+  }
+}
+#donors .circle{
+  position: absolute;
+  border-radius: 50%;
+  background-color:rgba(205,207,209,0.5);
+  display: none;
+}
+#donors #circleOne{
+  width: 250px;
+  height: 250px;
+  left :-10px;
+  top : -20%;
+}
+
+#donors #circleTwo{
+  width: 500px;
+  height: 500px;
+  right :-50px;
+  top : 20%;
+}
+#donors #circleThree{
+  width: 600px;
+  height: 600px;
+  left : -5%;
+  bottom : -25%;
+}
+/* end donor section */
+/* greatWork section */
+#greatWork{
+  padding: 5rem 0;
+}
+#greatWork .head h2::before{
+  content: '';
+  width: 5rem;
+  height: 20px;
+  border-bottom: 3px solid #EA4335;
+  border-top: 3px solid #EA4335;
+  position: absolute;
+  bottom: -20px;
+  left:50%;
+  transform: translateX(-50%);
+  
+}
+#greatWork .head h2::after{
+  content: '';
+  width: 10rem;
+  height: 3px;
+  background-color: #EA4335;
+  position: absolute;
+  bottom: -11px;
+  left:50%;
+  transform: translateX(-50%);
+}
+#greatWork .icon{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: #EA4335 3px solid;
+}
+#greatWork .icon i{
+  font-size: 30px;
+  cursor: pointer;
+}
+#greatWork .icon p{
+  color:#EA4335;
+  font-weight: bold;
+}
+#greatWork .icon i:hover{
+  color:#EA4335;
+}
+/* end greatWork section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Testimonial Starting by Rana */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 #testimonial-area .section-heading h2 {
@@ -385,106 +760,3 @@
 
 /* Testimonial Ending by Rana */
 
-
-body{
-    direction: rtl;
-    text-align: right;
-}
-.test{
-    width: 100%;
-    height: 600px;
-    background-color: indianred;
-}
-#donors{
-    padding: 5rem 0;
-    background-color: #F7F7F7;
-    position: relative;
-    overflow: hidden;
-}
-#donors .item{
-    border-radius: 50px;
-    padding: 1rem;
-    box-shadow: 3px 3px 5px #a9aeb2;
-    background-color: #fff;
-    cursor: pointer;
-    display: none;
-}
-
-#donors .item img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: #F79E99 3px solid;
-}
-
-#donors .item .icons{
-    padding: 1rem;
-    border-top: solid 1px #a9aeb2;
-}
-#donors .icons i{
-    padding: 0.5rem;
-    border-radius: 50%;
-    /* width: 30px;
-    height: 30px; */
-    /* text-align: center;
-    margin: auto; */
-}
-#donors .icons .myfbook{
-    color: #3C5A98;
-    border:solid 1px #3C5A98;
-}
-#donors .icons .mytwitter{
-    color: #1DA1F2;
-    border:solid 1px #1DA1F2;
-}
-#donors .icons .mygoogle{
-    color: #EA4335;
-    border:solid 1px #EA4335;
-}
-#donors .detail{
-    display: none;
-}
-#donors .detail h3::after{
-    content: "";
-    content: '';
-    position: absolute;
-    width: 30%;
-    height: 3px;
-    background-color: #EA4335;
-    bottom: 0;
-    right: 1%;
-    animation: movaLine 1s infinite alternate-reverse;
-}
-@keyframes movaLine{
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 30%;
-    }
-}
-#donors .circle{
-    position: absolute;
-    border-radius: 50%;
-    background-color:rgba(205,207,209,0.5);
-    display: none;
-}
-#donors #circleOne{
-    width: 250px;
-    height: 250px;
-    left :-10px;
-    top : -20%;
-}
-
-#donors #circleTwo{
-    width: 500px;
-    height: 500px;
-    right :-50px;
-    top : 20%;
-}
-#donors #circleThree{
-    width: 600px;
-    height: 600px;
-    left : -5%;
-    bottom : -25%;
-}
