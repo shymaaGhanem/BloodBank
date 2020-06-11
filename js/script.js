@@ -1,4 +1,28 @@
 
+// click to go section
+$(".nav-item").click(function(){
+    let ref=$(this).attr("href")
+    let test= $(ref).offset().top
+    $("body,html").animate({scrollTop:`${test}`},1000)
+  })
+  
+  
+  // scroll change nav
+  let myOffset=$("#about").offset().top;
+  console.log(myOffset)
+  $(window).scroll(function(){
+      let wScroll =$(window).scrollTop()
+      if(wScroll>=myOffset){
+  
+          $("nav").css("backgroundColor","white")
+          $("nav").css("color","white")
+      }
+  }
+  
+  
+  )
+
+
 //about
   var windowBottom = $(this).scrollTop() + $(this).innerHeight();
   $(".fade").addClass('animate__animated  animate__rotateInDownLeft  animate__rotateInDownRight animate__delay-1s',1000,function(){

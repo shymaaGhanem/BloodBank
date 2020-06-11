@@ -1,4 +1,141 @@
 
+body{
+  text-align: right;
+  direction: rtl;
+}
+.main-bgcolor{
+background-color:rgb(225, 29, 46);
+
+}
+/* navbar */
+.navbar{
+position: fixed;
+top:0;
+left:0;
+right: 0;
+z-index: 9999;
+
+
+
+
+
+}
+
+.nav-item a{
+  color:rgb(68, 67, 67) !important;
+  padding: .4rem;
+  margin: .3rem;
+
+}
+.reg{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10rem !important;
+   
+  
+
+}
+.navbar-brand{
+  padding: .4rem !important;
+  margin: .3rem !important;
+  font-weight: bold !important;
+}
+
+/* end navbar*/
+
+/* start home section */
+#home{
+  height: 100vh;
+}
+.home-header{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; 
+
+}
+
+video{
+width:72%;
+
+
+}
+
+.wave-bottom1{
+ position:absolute ;
+ width: 100%;
+ bottom: 0;
+ z-index: 10;
+
+}
+.wave-bottom2{
+  bottom: 20px;
+  z-index: 9;
+}
+.wave-left1{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 72%;
+}
+.wave-left2{
+  position: absolute;
+  top:0;
+  left:0px;
+  width: 74%;
+}
+.home-header .img1 {
+  position: absolute;
+  opacity: .3;
+  left: 100px;
+  top:100px;
+  width: 70px;
+}
+.img2{
+  position: absolute;
+  opacity: .3;
+  left: 30px;
+  width:50px ;
+bottom: 200px;
+}
+
+
+
+
+/* media query */
+
+@media (max-width: 575px) {
+
+.wave-bottom1,.wave-bottom2{
+  display: none;
+}
+video{
+  width: 100%;
+}
+}
+
+
+@media (max-width: 1000px) { 
+.wave-left1,.wave-left2,.img1,.img2,.wave-bottom1,.wave-bottom2{
+  display: none;
+  
+}
+video{
+  width: 100%;
+
+}
+
+}
+
+@media (max-width: 1400px) {
+video{
+  width: 100%;
+}
+
+}
+
+
+
 /*about section*/
 #about
 {
