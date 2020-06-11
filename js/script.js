@@ -33,6 +33,7 @@ $(document).ready(function () {
 
 
 // donor script display with effects
+
 // let donorOffset = $("#donors").offset().top;
 // $(window).scroll(function(){
 //     let wScroll = $(window).scrollTop();
@@ -52,3 +53,23 @@ $(document).ready(function () {
         })
 //     }
 // })
+
+//counter
+let counterElem = document.getElementsByClassName("counter");
+let count = [0,0,0,0];
+let maxCount = [2000,3000,3500,1320];
+var interv =[];
+for(let i =0; i< counterElem.length;i++){
+    interv[i] = setInterval(function() {
+        incrementCount(i)},50);
+}
+
+function incrementCount(index){
+    count[index]++;
+    if(count[index] >= maxCount[index]){
+        clearInterval(interv[index]);
+        
+    }
+    counterElem[index].innerHTML = count[index];
+    
+}
