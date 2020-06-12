@@ -16,6 +16,11 @@ $(".nav-item").click(function(){
   
           $("nav").css("backgroundColor","white")
           $("nav").css("color","white")
+          $("nav").css("boxShadow"," 3px 3px 5px #a9aeb2")
+      }
+      else{
+        $("nav").css("backgroundColor","transparent") 
+        $("nav").css("boxShadow"," none")
       }
   }
   
@@ -24,6 +29,7 @@ $(".nav-item").click(function(){
 
 
 //about
+
   var windowBottom = $(this).scrollTop() + $(this).innerHeight();
   $(".fade").addClass('animate__animated  animate__rotateInDownLeft  animate__rotateInDownRight animate__delay-1s',1000,function(){
 
@@ -89,6 +95,8 @@ $(document).ready(function () {
 // $(window).scroll(function(){
 //     let wScroll = $(window).scrollTop();
 //     if(wScroll >= donorOffset){
+
+
         $(".item").eq(0).slideDown(1000,function(){
             $(".item").eq(1).show(1000,function(){
                 $(".item").eq(2).slideDown(1000,function(){

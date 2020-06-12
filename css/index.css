@@ -19,6 +19,7 @@ z-index: 9999;
 
 
 
+
 }
 
 .nav-item a{
@@ -56,7 +57,7 @@ z-index: 9999;
 }
 
 video{
-width:72%;
+width:74%;
 
 
 }
@@ -76,27 +77,34 @@ width:72%;
   position: absolute;
   top:0;
   left:0;
-  width: 72%;
+  width: 70%;
 }
 .wave-left2{
   position: absolute;
   top:0;
   left:0px;
-  width: 74%;
+  width: 72%;
 }
 .home-header .img1 {
   position: absolute;
   opacity: .3;
   left: 100px;
   top:100px;
-  width: 70px;
+  width: 50px;
 }
 .img2{
   position: absolute;
   opacity: .3;
   left: 30px;
-  width:50px ;
+  width:70px ;
 bottom: 200px;
+}
+.img3{
+  position: absolute;
+  opacity: .3;
+  width:200px ;
+  top: 200px;
+  left:200px
 }
 
 
@@ -104,24 +112,29 @@ bottom: 200px;
 
 /* media query */
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
 
-.wave-bottom1,.wave-bottom2{
-  display: none;
-}
+
 video{
-  width: 100%;
+display: none;
+}
+.home-header{
+  background-image: url(../img/blood-donors-new.jpg);
+  background-position: center center;
+  background-size: cover;
+
 }
 }
 
 
 @media (max-width: 1000px) { 
-.wave-left1,.wave-left2,.img1,.img2,.wave-bottom1,.wave-bottom2{
+.wave-left1,.wave-left2,.img1,.img2,.img3{
   display: none;
   
 }
 video{
   width: 100%;
+  
 
 }
 
