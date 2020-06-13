@@ -61,7 +61,7 @@
       <ul class="navbar-nav  ">
 
         <li class="nav-item ">
-            <a class="nav-link reg  " href="#blood-bank">تسجيل دخول <span class="sr-only">(current)</span></a>
+            <a class="nav-link reg  " href="#blood-bank" data-toggle="modal" data-target="#exampleModal">تسجيل دخول <span class="sr-only">(current)</span></a>
           </li>
         <!--  <li class="nav-item dropdown  ">
             <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -111,9 +111,9 @@
 </svg>
 </div>
 
-<img src="img/blood-drop-37719.png" alt="blood drop" class="img1">
-<img src="img/blood-drop-37719.png" alt="blood drop" class="img2">
-<img src="img/blood-drop-37719.png" alt="blood drop" class="img3">
+<img src="img/savelife-light.svg" alt="blood drop" class="img1">
+<img src="img/savelife-light.svg" alt="blood drop" class="img2">
+<img src="img/savelife-red.svg" alt="blood drop" class="img3">
 </div>
 </section>
 <!--end home section-->
@@ -444,6 +444,34 @@
 
 
     <!--end footer-->
+
+    <!--modale-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              
+               <form class="form-inline">
+   
+                   <div class="input-group mb-2 ml-sm-2">
+                       <input type="text" class="form-control " id="inlineFormInputGroupUsername2" placeholder="اسم المستخدم ">
+                   </div>
+                   <div class="input-group mb-2 ml-sm-2">
+                     <input type="password" class="form-control" id="inlineFormInputGroupUsername2" placeholder="الرقم السري ">
+                   </div>
+                   
+                 
+                   <button type="submit" class="btn btn-primary  px-3 ml-5 ">دخول </button>
+                 </form>
+            </div>
+            <div class="modal-body">
+               <a href="regestration.html" ><button type="button" class="btn btn-danger ">مستخدم جديد </button></a> 
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <!--end model-->
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

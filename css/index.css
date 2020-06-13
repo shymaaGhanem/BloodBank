@@ -42,6 +42,12 @@ z-index: 9999;
   font-weight: bold !important;
 }
 
+.modal-dialog {
+  position: absolute;
+  left: 40pxpx !important;
+  text-align: center !important;
+z-index: 999999;
+}
 /* end navbar*/
 
 /* start home section */
