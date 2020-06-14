@@ -1,160 +1,191 @@
 
-body{
-  text-align: right;
-  direction: rtl;
-}
-.main-bgcolor{
-background-color:rgb(225, 29, 46);
-
-}
-/* navbar */
-.navbar{
-position: fixed;
-top:0;
-left:0;
-right: 0;
-z-index: 9999;
 
 
-
-
-
-
-}
-
-.nav-item a{
-  color:rgb(68, 67, 67) !important;
-  padding: .4rem;
-  margin: .3rem;
-
-}
-.reg{
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-right: 10rem !important;
+  .main-bgcolor{
+    background-color:rgb(240, 97, 98);
    
+   }
+   /* navbar */
+   .navbar{
+   
+   position: fixed;
+   top:0;
+   left:0;
+   right: 0;
+   z-index: 9999;
+   color:rgb(210, 60, 70) !important;
   
+   }
+   .mynav{
+   
+     display: flex;
+     justify-content:space-between ;
+    
+   }
+   
+   .nav-item a{
+   font-size: 1.2rem;
+       padding: .4rem;
+       margin: .3rem;
+       color:rgb(240, 97, 98) !important
+   
+   }
+   
+   
+   .reg{
+      
+       font-weight: bold;
+        font-size: 1.5rem;
 
-}
-.navbar-brand{
-  padding: .4rem !important;
-  margin: .3rem !important;
-  font-weight: bold !important;
-}
-
-.modal-dialog {
-  position: absolute;
-  left: 40pxpx !important;
-  text-align: center !important;
-z-index: 999999;
-}
-/* end navbar*/
-
-/* start home section */
-#home{
-  height: 100vh;
-}
-.home-header{
-  position: relative;
-  height: 100%;
-  width: 100%;
-  overflow: hidden; 
-
-}
-
-video{
-width:74%;
-
-
-}
-
-.wave-bottom1{
- position:absolute ;
- width: 100%;
- bottom: 0;
- z-index: 10;
-
-}
-.wave-bottom2{
-  bottom: 20px;
-  z-index: 9;
-}
-.wave-left1{
-  position: absolute;
-  top:0;
-  left:0;
-  width: 70%;
-}
-.wave-left2{
-  position: absolute;
-  top:0;
-  left:0px;
-  width: 72%;
-}
-.home-header .img1 {
-  position: absolute;
-  opacity: .3;
-  left: 100px;
-  top:100px;
-  width: 50px;
-}
-.img2{
-  position: absolute;
-  opacity: .3;
-  left: 30px;
-  width:70px ;
-bottom: 200px;
-}
-.img3{
-  position: absolute;
-  opacity: .3;
-  width:200px ;
-  top: 200px;
-  left:200px
-}
-
-
-
-
-/* media query */
-
-@media (max-width: 767px) {
-
-
-video{
-display: none;
-}
-.home-header{
-  background-image: url(../img/blood-donors-new.jpg);
-  background-position: center center;
-  background-size: cover;
-
-}
-}
-
-
-@media (max-width: 1000px) { 
-.wave-left1,.wave-left2,.img1,.img2,.img3{
-  display: none;
-  
-}
-video{
-  width: 100%;
-  
-
-}
-
-}
-
-@media (max-width: 1400px) {
-video{
-  width: 100%;
-}
-
-}
-
-
-
+   
+   }
+   .navbar-brand{
+    padding: .4rem;
+    margin: .3rem;
+    font-size: 1.5rem;
+       color:rgb(240, 97, 98) !important;
+      
+       font-weight: bold !important;
+   }
+   
+   /* end navbar*/
+   
+   /* start home section */
+   #home{
+       height: 100vh;
+   }
+   .home-header{
+       position: relative;
+       height: 100%;
+       width: 100%;
+       overflow: hidden; 
+     
+   }
+   .div-img{
+     
+       width: 100%;
+       height: 100%;
+       overflow: auto;
+   }
+   .img-header{
+       width: 100%;
+       position: absolute;
+     bottom:0;
+       left:-8%;
+     z-index: 10;
+   
+   }
+   .header-title{
+       width: 100%;
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   z-index: 20;
+   color:rgb(240, 97, 98) !important;
+   font-size: 1.5rem;
+   
+   text-align: center;
+   
+   
+   }
+   .header-title h4{
+       color:grey
+   }
+   .header-content{
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     
+   }
+   
+   .header-title a{
+       color:grey;
+       font-size: 1.3rem;
+       padding:.5rem 1rem;
+       width: 40%;
+   
+   }
+   .header-title a:hover{
+       color:white;
+   }
+   
+   
+   
+   .wave-left1{
+       position: absolute;
+       top:0;
+       left:0;
+       width: 100%;
+       z-index: 0;
+   }
+   .wave-left2{
+       position: absolute;
+       top:0;
+       left:0px;
+       width: 100%;
+       z-index: -1;
+   }
+   
+   
+   .circle1-header{
+       width: 500px;
+       height: 500px;
+       border-radius: 50%;
+       position: absolute;
+       left:-250px;
+       top:-250px;
+       background-color:grey;
+       z-index: 9999;
+       display: none;
+   }
+   .circle2-header{
+       width: 300px;
+       height: 300px;
+       border-radius: 50%;
+       position: absolute;
+       right: -150px;
+       top:-150px;
+       background-color:rgb(240, 97, 98);
+       
+   
+   }
+   
+   
+   
+   /* media query */
+   
+   @media (max-width: 767px) {
+   
+   .wave-left1,.wave-left2,.img-header{
+       display: none;
+   }
+   
+   .home-header{
+       background-image: url(../img/img2.png);
+       background-position: top center;
+       background-repeat: no-repeat;
+   }
+   .header-title {
+       position: absolute;
+       top:75%;
+       
+   }
+   .header-title p{
+       display: none;
+   }
+   .header-title h4{
+       font-size: 20px;
+       font-weight: bold;
+       padding-bottom: 10px;
+   }
+   .header-title h1{
+       font-size: 2.5rem;
+       font-weight: bold;
+   
+   }
+   }
+   
 /*about section*/
 #about
 {

@@ -17,6 +17,7 @@ $(".nav-item").click(function(){
           $("nav").css("backgroundColor","white")
           $("nav").css("color","white")
           $("nav").css("boxShadow"," 3px 3px 5px #a9aeb2")
+          $("nav").css("borderRadius","10px")
       }
       else{
         $("nav").css("backgroundColor","transparent") 
