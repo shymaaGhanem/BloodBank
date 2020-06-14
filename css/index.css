@@ -203,7 +203,7 @@ right: 50px;
     width: 100%;
     height: 400px;
     transform: rotate(5deg);
-    background: linear-gradient(90deg, #EA4335 11%, rgba(217,165,166,0.9808298319327731) 35%,  #EA4335 56%);
+    background: linear-gradient(90deg, #c01616c0 11%, rgba(217,165,166,0.9808298319327731) 35%,  #c01616c0 56%);
     
 }
 
@@ -226,7 +226,7 @@ right: 50px;
     width: 80px;
     height: 2px;
     background: #EA4335;
-    background: linear-gradient(90deg, #EA4335 49%, rgba(248, 126, 128, 0.981) 71%);
+    background: linear-gradient(90deg, #c01616c0 49%, rgba(233, 199, 199, 0.981) 71%);
 }
 .about-layer p
 {
@@ -348,6 +348,57 @@ right: 50px;
 /*end about*/
 
 
+
+/* start counter section */
+#counter
+{
+   
+ background-image: url(../img/dots.webp);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 200px;
+    
+}
+
+.counter-box
+{
+   
+   width:50%;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+   /* box-shadow: 0 0 0 10px  #be68609f;*/
+}
+/*.counter-box:hover
+{
+  background-color:#EA4335;
+  color: #fff;
+  box-shadow: 0 0 0 10px  #646363;
+}*/
+.icon p
+{
+  font-weight: 800px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #8c8e91d7;
+  padding-top: 2rem;
+}
+.icon i
+{
+ color:#c01616c0;
+ font-size: 80px;
+
+}
+.space-counter
+{
+    margin-top: 9rem;
+    font-size: 20px;
+}
+/* end counter section */
+
+
 /* donor section */
 body{
   direction: rtl;
@@ -356,6 +407,7 @@ body{
 
 #donors{
   padding: 5rem 0;
+  margin-bottom: 200px;
   background-color: #F7F7F7;
   position: relative;
   overflow: hidden;
@@ -448,50 +500,9 @@ body{
   bottom : -25%;
 }
 /* end donor section */
-/* greatWork section */
-#greatWork{
-  padding: 5rem 0;
-}
-#greatWork .head h2::before{
-  content: '';
-  width: 5rem;
-  height: 20px;
-  border-bottom: 3px solid #EA4335;
-  border-top: 3px solid #EA4335;
-  position: absolute;
-  bottom: -20px;
-  left:50%;
-  transform: translateX(-50%);
-  
-}
-#greatWork .head h2::after{
-  content: '';
-  width: 10rem;
-  height: 3px;
-  background-color: #EA4335;
-  position: absolute;
-  bottom: -11px;
-  left:50%;
-  transform: translateX(-50%);
-}
-#greatWork .icon{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: #EA4335 3px solid;
-}
-#greatWork .icon i{
-  font-size: 30px;
-  cursor: pointer;
-}
-#greatWork .icon p{
-  color:#EA4335;
-  font-weight: bold;
-}
-#greatWork .icon i:hover{
-  color:#EA4335;
-}
-/* end greatWork section */
+
+
+
 
 
 
@@ -886,13 +897,59 @@ body{
 /* Testimonial Ending by Rana */
 
 
+/* greatWork section */
+#greatWork{
+
+  padding-top: 200px;
+  background-image: url(../img/dots.webp);
+  background-position: center center;
+  background-size: cover;
+}
+
+#greatWork .head h2::after{
+  content: '';
+  width: 10rem;
+  height: 2px;
+  background-color: #d43021;
+  background: linear-gradient(90deg, #c0161673 49%,#c01616c0 71%);
+  position: absolute;
+  bottom: -11px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.head h2
+{
+  color: rgb(39, 13, 104);
+}
+
+.great-workContent
+{
+  background-color:rgba(12, 11, 12, 0.719);
+  box-shadow: 0 1px 1px 0 #8a3931b9, 0 2px 5px 0 #a0382f;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.text
+{
+  color: #ffffff !important;
+  font-weight: bold;
+  font-size:17px;
+}
+
+
+/* end greatWork section */
+
+
 /*footer*/
 #footer
 {
     background-color:#273036;
-    background-image: linear-gradient(180deg, #273036 10%, #D62E33 100%);
+    background-image: linear-gradient(180deg, #640303 60% , #000000 80%);
     opacity: 0.9;
     color: white;
+    text-align: right;
    
 }
 .call-info h3
@@ -949,11 +1006,16 @@ body{
 .subscribe-box
 {
     margin: 0 auto;
-    background-color:#D62E33;
+    background-color:#f7eef7;
     padding: 30px;
+    box-shadow: 0 1px 1px 0 rgba(204, 30, 30, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
     
-    border-radius: 5px;
-    
+}
+.location-img img
+{
+ width: 100%;
+
 }
 .btn-outline-secondary
 {
@@ -964,9 +1026,9 @@ body{
 }
 .btn-outline-secondary:hover
 { 
-    background-color: #fdfcfc;
+    background-color: #9c1217;
     border:1px solid #fcf9f9;
-    color: rgb(121, 122, 122);
+    color: rgb(246, 250, 250);
 }
 
 input[type=text] {
