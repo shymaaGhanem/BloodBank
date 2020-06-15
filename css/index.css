@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap'); */
 
 
+
+body
+{
+  font-family: 'Tajawal', sans-serif;
+  /* font-family: 'Markazi Text', serif; */
+}
 
   .main-bgcolor{
     background-color:rgb(240, 97, 98);
@@ -516,10 +525,35 @@ body{
   line-height: 58px;
 }
 
+#testimonial-area .section-heading h5
+{
+  color: #ce4b4b;
+}
+
 #testimonial-area
 {
-    margin-top:100px
+    margin-top:100px;
+    position: relative;
+}
 
+.testiCircle
+{
+  width:400px ; 
+  height: 400px;
+  position: absolute;
+  background-color: #faa9a956;
+  border-radius: 50%;
+  bottom: 0;
+  right:-150px
+}
+
+.testiSign
+{
+  font-size: 180px;
+  position: absolute;
+  right: 55%;
+  top:10%;
+  color: #f1f0f0;
 }
 
 .testi-wrap {
@@ -653,6 +687,12 @@ body{
 .client-info p {
   color: #0084ff;
   text-transform: uppercase;
+}
+
+.client-info img
+{
+  width:50px;
+  height: 50px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
