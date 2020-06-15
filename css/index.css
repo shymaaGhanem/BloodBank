@@ -349,6 +349,48 @@ right: 50px;
 
 
 
+
+/*camps section */
+#camps
+{
+  padding-top:130px;
+  padding-bottom: 5rem;
+}
+.capms-layers1
+{
+  background-color: rgb(250, 245, 245);
+  box-shadow: 12px 12px 15px 0 #c01616c0, 0 0px 1px 0 rgba(0, 0, 0, 2);
+ 
+}
+.event-title 
+{
+  
+  color: rgb(39, 13, 104);
+}
+.event-content
+{
+  color: #b9b8b8;
+   font-size: 16px;
+   padding: 10px;
+}
+.event-info i
+{
+  margin-top:17px;
+  margin-bottom: 10px;
+}
+.event-info i
+{
+  color: #c01616c0;
+}
+.text-1
+{
+  color: #0a0a0a;
+  font-size: 15px;
+
+}
+/*end camps section */
+
+
 /* start counter section */
 #counter
 {
@@ -516,10 +558,35 @@ body{
   line-height: 58px;
 }
 
+#testimonial-area .section-heading h5
+{
+  color: #ce4b4b;
+}
+
 #testimonial-area
 {
-    margin-top:100px
+    margin-top:100px;
+    position: relative;
+}
 
+.testiCircle
+{
+  width:400px ; 
+  height: 400px;
+  position: absolute;
+  background-color: #faa9a956;
+  border-radius: 50%;
+  bottom: 0;
+  right:-150px
+}
+
+.testiSign
+{
+  font-size: 180px;
+  position: absolute;
+  right: 55%;
+  top:10%;
+  color: #f1f0f0;
 }
 
 .testi-wrap {
@@ -653,6 +720,12 @@ body{
 .client-info p {
   color: #0084ff;
   text-transform: uppercase;
+}
+
+.client-info img
+{
+  width:50px;
+  height: 50px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
