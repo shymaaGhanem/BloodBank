@@ -19,7 +19,7 @@ body
 .navbar{
 
   position: fixed;
- padding:0 5rem !important;
+ padding-top:1.5rem !important;
  
  top:0;
  left:0;
