@@ -99,9 +99,9 @@ $(window).scroll(function(){
             $(".item").eq(1).show(1000,function(){
                 $(".item").eq(2).slideDown(1000,function(){
                     $("#circleTwo").fadeIn(1000,function(){
-                        $("#circleOne").slideDown(1000);
-                        $("#circleThree").slideDown(1000,function(){
-                            $(".detail").slideDown(1000);
+                        $("#circleOne").slideDown(500);
+                        $("#circleThree").slideDown(500,function(){
+                            $(".detail").slideDown(500);
                         });
                     });
                 });
@@ -114,11 +114,11 @@ $(window).scroll(function(){
 //counter
 let counterElem = document.getElementsByClassName("counter");
 let count = [0,0,0,0];
-let maxCount = [2000,3000,3500,1320];
+let maxCount = [2578,2100,3500,1320];
 var interv =[];
 for(let i =0; i< counterElem.length;i++){
     interv[i] = setInterval(function() {
-        incrementCount(i)},50);
+        incrementCount(i)},100);
 }
 
 function incrementCount(index){

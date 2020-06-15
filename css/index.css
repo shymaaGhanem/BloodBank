@@ -366,7 +366,7 @@ right: 50px;
 #counter
 {
    
- background-image: url(../img/dots.webp);
+ /* background-image: url(../img/dots.webp); */
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -421,7 +421,7 @@ body{
 #donors{
   padding: 5rem 0;
   margin-bottom: 200px;
-  background-color: #F7F7F7;
+  /* background-color: #F7F7F7; */
   position: relative;
   overflow: hidden;
 }

@@ -4,9 +4,7 @@ $(document).ready(function(){
         margin:10,
         items:1,
         rtl:true,
-        center: true,
         nav:true,
         navText :[" السابق" , " التالى "],
-      
     });
   });
