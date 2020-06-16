@@ -7,6 +7,7 @@
 body
 {
   font-family: 'Tajawal', sans-serif;
+  overflow-x: hidden;
   /* font-family: 'Markazi Text', serif; */
 }
 
@@ -54,108 +55,160 @@ body
     
      font-weight: bold !important;}
      .navbar-brand img{
-         animation: logoAnimate 1.5s infinite;
+       
      }
+     .navbar-brand img{
+      animation: logoAnimate 1.5s infinite;
+    }
  
  /* end navbar*/
  
- /* start home section */
- 
- 
- #home{
-     
-     height: 100vh;
- 
-   
-     background-image: url(../img/header_bg.jpg);
-     background-position: center center;
-     background-size: cover;
- }
- .layer{
-    
-    height:500px;
-     border-radius:  50% 50% 0 50% ;
- 
-     position: relative;
-     background-color: red;
- }
- 
- .header1{
-     height: 100vh;
- position: relative;
- text-align: center;
- font-size: 1.5rem;
- line-height: 2rem;
- }
- 
- .header1 h2{
-     margin: 1rem;
-     font-size: 3rem;
-    text-shadow:  3px 3px 5px #a9aeb2;;
- }
- .header1 h4{
-     font-size: 2.5rem;
-     font-weight: normal;
-     text-shadow: 3px 3px 5px #a9aeb2;
- }
- 
- .header-title1{
-     position: absolute;
-     top:50%;
-     transform: translateY(-50%);
-     animation: titleAnimate 2s ;
- }
- 
- 
- 
- .btn-header{
-     
-     background-color: rgb(253, 21, 35);
- 
- margin: 1rem;
- border-radius:10px;
- font-size: 1.5rem;
- box-shadow: 3px 3px 5px #a9aeb2;
- 
- }
- .btn-header i{
- color:green;
- padding: 5px 10px 5px 5px;
- 
- }
+/* start home section */
+#home{
+  height: 100vh;
+  overflow: hidden;
+}
+.home-header{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; 
+
+}
+.div-img{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.img-header{
+  width: 100%;
+  position: absolute;
+  bottom:-9%;
+  left:-12%;
+z-index: 10;
+
+}
+.header-title{
+  width: 100%;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+z-index: 20;
+color:rgb(240, 97, 98) !important;
+font-size: 1.5rem;
+
+text-align: center;
+
+
+}
+.header-title h4{
+  color:grey
+}
+.header-content{
+position: relative;
+width: 100%;
+height: 100vh;
+
+}
+
+.header-title a{
+  color:grey;
+  font-size: 1.3rem;
+  padding:.5rem 1rem;
+  width: 40%;
+
+}
+.header-title a:hover{
+  color:white;
+}
+
+
+
+.wave-left1{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index: 0;
+}
+.wave-left2{
+  position: absolute;
+  top:0;
+  left:0px;
+  width: 100%;
+  z-index: -1;
+}
+
+
+.circle1-header{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  left:-250px;
+  top:-250px;
+  background-color:grey;
+  z-index: 9999;
+  display: none;
+}
+.circle2-header{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  right: -150px;
+  top:-150px;
+  background-color:rgb(240, 97, 98);
   
+
+}
+
+
+
+@keyframes logoAnimate{
+  from{
+transform: scale(.8);
+  }
+  to{
+  transform: scale(1);
+  }
+}
+
+/* media query */
+
+@media (max-width: 767px) {
+
+.wave-left1,.wave-left2,.img-header{
+  display: none;
+}
+
+.home-header{
  
- .header-title1 a:hover{
-     color:white;
-     text-shadow: 3px 3px 5px #26282b;
-     
- 
- }
- .btn-header:hover i{
-     color:black
-     }
- 
- 
- @keyframes titleAnimate{
-     0%{
-         transform:scale(.5)  translateY(-50%);
-       
-     }
-     100%{
-         transform: scale(1)  translateY(-50%) ;
-     }
- }
- @keyframes logoAnimate{
-     0%{
-         transform:scale(.8)  ;
-       
-     }
-     100%{
-         transform: scale(1)   ;
-     }
- }
- 
- 
+  background-image: url(../img/img2.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.header-title {
+  position: absolute;
+  top:75%;
+  
+}
+.header-title p{
+  display: none;
+}
+.header-title h4{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.header-title h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+
+}
+}
+
    
 /*about section*/
 #about
